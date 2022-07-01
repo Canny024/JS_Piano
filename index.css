@@ -1,0 +1,47 @@
+body{
+    background-image: url("bg1.webp");
+}
+
+header{
+    color: rgb(71, 195, 162);
+    text-align: center;
+    font-weight: 900;
+    font-size: 50px;
+    font-family: 'Indie Flower', cursive;
+}
+.container{
+    
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.piano{
+    display: flex;
+}
+.key{
+    height: calc(var(--width)*4);
+    width: var(--width);
+}
+
+.keywhite{
+    --width: 50px;
+    /* height: 400px; */
+    background-color: white;
+    border: 1px solid brown;
+}
+.keywhite.active{
+    background-color: #ccc;
+}
+.keyblack{
+    --width: 30px;
+    /* height: 240px; */
+    background-color: black;
+    margin-left: calc(var(--width)/-2);
+    margin-right: calc((var(--width)/-2));
+    z-index: 2;
+}
+.keyblack.active{
+    background-color: #333;
+}
